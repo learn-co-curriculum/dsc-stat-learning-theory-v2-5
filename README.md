@@ -1,4 +1,3 @@
-
 # Statistical Learning Theory
 
 ## Introduction
@@ -151,7 +150,7 @@ You'll learn about loss in further detail in upcoming lessons.
 
 - [Youtube: Introduction to Statistical Learning Theory](https://www.youtube.com/watch?v=rqJ8SrnmWu0)
 
-- [An Overview of Statistical Learning Theory with examples](https://www.princeton.edu/~harman/Papers/SLT-tutorial.pdf) 
+- [An Overview of Statistical Learning Theory with examples](https://www.princeton.edu/~kulkarni/Papers/Journals/j077_2011_KulHar_WileyTutorial.pdf) 
 
 ## Summary 
 
