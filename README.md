@@ -57,7 +57,7 @@ We then say that the **model is not capable of generalizing**, or that **model i
 
 Let's take a look at an example of the phenomenon: modeling happiness as a function of wealth. 
 
-<img src="./images/new_happy.png" width="600">
+<img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-stat-learning-theory-v2-5/master/images/new_happy.png" width="600">
 
 In the top three diagrams, we have data and models (dashed curves). From left to right the models have been trained longer and longer on the training data. The training error curve in the bottom box shows that the training error gets better and better as we train longer (increasing model complexity). You may think that if we train longer we'll get better! Well, yes, but **only better at describing the training data**. The top right box shows a very complex model that hits all the data points. This model does great on the training data, but when presented with new data (examine the prediction error curve in the bottom box) then it does worse! 
 
@@ -74,7 +74,7 @@ Here is how we perform validation, in its simplest form:
 * Use the smaller part for ***testing*** the model
 
 This setup looks like as shown below:
-<img src="./images/new_train_test_sets.png" width="600">
+<img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-stat-learning-theory-v2-5/master/images/new_train_test_sets.png" width="600">
 
 This is called a ***train-test split*** and means that you can compare the model performance on training data vs. testing data using a given **metric**. The metric can be R-Squared or it can be an error-based metric like RMSE.
 
