@@ -51,15 +51,17 @@ When modeling for prediction, it is important for the model to ***generalize*** 
 
 The model learns about the data during the ***training*** stage. Examples are presented to the model and the model tweaks its parameters to better understand the data.
 
-Once the training is over, the model is unleashed upon new data and then uses what it has learned to make predictions with that data. This is where problems can emerge. If we over-train the model on the training data i.e. make the model every detail of shown data, it will be able to identify all the relevant information in the training data, but will fail miserably when presented with the new data. 
+Once the training is over, the model is unleashed upon new data and then uses what it has learned to make predictions with that data. This is where problems can emerge. If we over-train the model on the training data -- i.e. make the model memorize every detail of the data it is shown -- it will be able to identify all the relevant information in the training data, but will fail miserably when presented with the new data. 
 
-We then say that the **model is not capable of generalizing**, or that **model is over-fitting the training data**. 
+We then say that the **model is not capable of generalizing**, or that the **model is over-fitting the training data**. 
 
 Let's take a look at an example of the phenomenon: modeling happiness as a function of wealth. 
 
 <img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-stat-learning-theory-v2-5/master/images/new_happy.png" width="600">
 
-In the top three diagrams, we have data and models (dashed curves). From left to right the models have been trained longer and longer on the training data. The training error curve in the bottom box shows that the training error gets better and better as we train longer (increasing model complexity). You may think that if we train longer we'll get better! Well, yes, but **only better at describing the training data**. The top right box shows a very complex model that hits all the data points. This model does great on the training data, but when presented with new data (examine the prediction error curve in the bottom box) then it does worse! 
+In the top three diagrams, we have data and models (dashed curves). From left to right the models have been trained longer and longer on the training data. The training error curve in the bottom box shows that the training error gets better and better as we train longer (increasing model complexity).
+
+You may think that if we train longer we'll get better! Well, yes, but **only better at describing the training data**. The top right box shows a very complex model that hits all the data points. This model does great on the training data, but when presented with new data (examine the prediction error curve in the bottom box) then it does worse! The gap between the training error and prediction error for new data (labeled "optimism") is growing as model complexity increases, which means that we are getting _worse_ at generalizing.
 
 In order to create good predictive models in machine learning that are capable of generalizing, one needs to know when to stop training the model so that it doesn't over-fit.
 
